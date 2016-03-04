@@ -1,8 +1,8 @@
 #Useful Links#
 
 
-###Product Development GitHub Repository:
-[Course Materials: Product Development](https://github.com/AdrienAtallah/Product_Development) 
+###Product Design GitHub Repository:
+[Course Materials: Product Design](https://github.com/AdrienAtallah/Product_Development) 
 
 
 ###Software Download Links:
