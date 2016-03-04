@@ -10,7 +10,7 @@
 [pygame.org](http://www.pygame.org/tags/game)
 
 ###Download Sublime Text Editor
-[Sublime Text](www.sublimetext.com)
+[Sublime Text](http://www.sublimetext.com)
 
 ###Books website
 [invent with python](http://inventwithpython.com/index.html)
