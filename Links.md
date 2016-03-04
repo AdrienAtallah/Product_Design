@@ -14,12 +14,15 @@
 
 
 ###Python Resources:
+######Free online IDE and terminal
+[Coding Ground](http://tutorialspoint.com/codingground.htm)
 ######Tons of games, tutorials, and much more involving python and pygame:
 [pygame.org](http://www.pygame.org/tags/game)
 ######Some more games, animations and python resources:
 [python3.codes](http://python3.codes/page/2/)
 ######A buch more python code examples:
 [Program Arcade Games With Python and Pygame](http://www.balloonbuilding.com/index.php?chapter=example_code)
+
 
 
 ###Course Textbooks:
