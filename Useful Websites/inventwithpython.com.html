@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!--<base href="http://localhost:8000/" />-->
+  <link rel="stylesheet" type="text/css" href="inventwithpython.com_files/inventweb_invent.css">
+  <link rel="shortcut icon" href="http://inventwithpython.com/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="http://inventwithpython.com/favicon.ico" type="image/x-icon">
+
+  <title></title>
+  <script src="inventwithpython.com_files/widgets.js" id="twitter-wjs"></script><script src="inventwithpython.com_files/sdk.js" id="facebook-jssdk"></script><script src="inventwithpython.com_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript">
+//<![CDATA[
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5459430-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  //]]>
+  </script>
+  <meta name="author" content="Al Sweigart">
+<script src="inventwithpython.com_files/button.js" async="" charset="utf-8" type="text/javascript"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+
+<body>
+  <!-- Facebook like button code -->
+  <div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="inventwithpython.com_files/xd_arbiter.html" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_http" scrolling="no" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_http" frameborder="0"></iframe><iframe src="inventwithpython.com_files/xd_arbiter_002.html" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_https" scrolling="no" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_https" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <div id="headerarea">
+    <table border="0">
+      <tbody><tr>
+        <td rowspan="3"><a href="http://inventwithpython.com/index.html"><img src="inventwithpython.com_files/header_invent.png" id="headerimage" name="headerimage" alt="header image"></a></td>
+
+        <td colspan="3">
+          <br>
+
+          <center style="font-size: 0.75em;">
+            <em>Click to view the other books</em>
+          </center>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="3">
+          <a href="https://automatetheboringstuff.com/"><img src="inventwithpython.com_files/otherbooks_automate.jpg" style="margin-left: 20px; padding-right: 0px;" alt="Automate the Boring Stuff with Python cover thumbnail"></a>
+          <a href="http://inventwithpython.com/index.html"><img src="inventwithpython.com_files/otherbooks_invent.png" style="padding-left: 0px; padding-right: 4px;" alt="Invent with Python cover thumbnail"></a>
+          <a href="http://inventwithpython.com/pygame/index.html"><img src="inventwithpython.com_files/otherbooks_pygame.png" style="padding-left: 0px;" alt="Making Games cover thumbnail"></a>
+          <a href="http://inventwithpython.com/hacking/index.html"><img src="inventwithpython.com_files/otherbooks_hacking.png" style="padding-left: 0px;" alt="Hacking Secret Ciphers cover thumbnail"></a></td>
+      </tr>
+
+      <tr>
+        <td><iframe data-url="http://InventWithPython.com" src="inventwithpython.com_files/tweet_button.html" title="Twitter Tweet Button" style="position: static; visibility: visible; width: 60px; height: 20px;" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" allowtransparency="true" scrolling="no" id="twitter-widget-0" frameborder="0"></iframe>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></td>
+
+        <td><div fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=8&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FInvent-Your-Own-Computer-Games-with-Python%2F473751562690085&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=false" fb-xfbml-state="rendered" class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/pages/Invent-Your-Own-Computer-Games-with-Python/473751562690085" data-layout="button" data-action="like" data-show-faces="false" data-share="true"><span style="vertical-align: bottom; width: 95px; height: 20px;"><iframe class="" src="http://www.facebook.com/v2.0/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D42%23cb%3Df9f96c0660902e%26domain%3Dinventwithpython.com%26origin%3Dhttp%253A%252F%252Finventwithpython.com%252Ff319441fddd0726%26relation%3Dparent.parent&amp;container_width=8&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FInvent-Your-Own-Computer-Games-with-Python%2F473751562690085&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=false" style="border: medium none; visibility: visible; width: 95px; height: 20px;" title="fb:like Facebook Social Plugin" scrolling="no" allowfullscreen="true" allowtransparency="true" name="f3a97aab30f27da" frameborder="0" height="1000px" width="1000px"></iframe></span></div></td>
+
+        <td><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Finventwithpython.com"><img src="inventwithpython.com_files/stumbleuponicon.png" alt="Vote up on StumbleUpon.com"></a></td>
+      </tr>
+    </tbody></table>
+  </div>
+
+
+  <div id="mainarea">
+
+  <div id="sidebar">
+    <ul>
+      <li><a href="http://inventwithpython.com/chapters">Read It Online</a></li>
+
+      <li><a href="http://www.amazon.com/gp/product/0982106017?ie=UTF8&amp;tag=playwithpyth-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0982106017">Buy the Book</a></li><!--<li><a href="#">Forum</a></li>-->
+
+      <li style="list-style: none"><br></li>
+
+      <li><a href="http://inventwithpython.com/blog"><strong>Book's Blog</strong></a></li>
+
+      <li><a href="http://www.reddit.com/r/inventwithpython">Subreddit Forum</a></li>
+
+      <li style="list-style: none"><br></li>
+
+      <li><a href="http://inventwithpython.com/downloads">Downloads</a></li><!-- <li><a href="wiki">Wiki</a></li>-->
+
+      <!-- not done yet <li><a href="buggy">Buggy Code</a></li>-->
+
+      <!--<li><a href="/traces">Traces</a></li>-->
+
+      <li><a href="http://inventwithpython.com/diff">Diff Tool</a></li>
+
+      <li><a href="http://inventwithpython.com/videos">Videos</a></li>
+
+      <li><a href="http://inventwithpython.com/extra">Extra Content</a></li>
+
+      <li><a href="http://inventwithpython.com/errata">Errata</a></li>
+
+      <li><a href="http://inventwithpython.com/educationdiscount">Edu Discount</a></li>
+
+      <li style="list-style: none"><br></li>
+
+      <li><a href="http://inventwithpython.com/about.html">About the Author</a></li>
+
+      <li><a href="http://inventwithscratch.com/">Invent with Scratch</a></li>
+
+      <li style="list-style: none"><br></li>
+
+      <li><a href="http://inventwithpython.com/bitcoin">Donate Bitcoins</a></li>
+
+      <li style="list-style: none; display: inline">
+        <div>
+          <br>
+
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input name="cmd" value="_s-xclick" type="hidden"> <input name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7----- " type="hidden"> <input src="inventwithpython.com_files/btn_donate_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" border="0" type="image"> <img alt="" src="inventwithpython.com_files/pixel.gif" height="1" border="0" width="1">
+          </form>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    <div id="contentarea">
+
+
+
+  <div>
+    <!-- Automate the Boring Stuff with Python blurb -->
+
+    <div>
+      <table border="0">
+        <tbody><tr>
+          <td style="vertical-align: top"><a href="http://inventwithpython.com/chapters/"><img src="inventwithpython.com_files/cover_automate_thumb.png" class="bookcover" align="right"></a></td>
+
+          <td>
+            <h1>Learn how to program!</h1>
+
+            <p>Everyone in the 21st century needs to learn to code, 
+right? But not everyone needs to become a software engineer or computer 
+scientist. <em>Automate the Boring Stuff with Python</em> is written for
+ office workers, students, administrators, and anyone who uses a 
+computer how to write small, practical programs to automate tasks on 
+their computer.</p>
+
+            <p>You don't need to know all the complexities of algorithms
+ and syntax, you just want to write basic programs to automate mundane 
+computer tasks. In the process, even total beginners will learn to use 
+Python to control their computers without having to learn complex 
+information about computer science. This is a practical programming 
+guide for the rest of us.</p>
+
+            <!-- Buy and Read Online buttons -->
+            <div style="text-align: center">
+              <a href="http://www.amazon.com/gp/product/1593275994/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1593275994&amp;linkCode=as2&amp;tag=playwithpyth-20&amp;linkId=HDM7V3T6RHC5VVN4"><img src="inventwithpython.com_files/buyonamazon_yellow.png"></a> <a href="https://automatetheboringstuff.com/"><img src="inventwithpython.com_files/readonline_yellow.png"></a>
+            </div><!-- Quick download links -->
+
+            <div style="margin-left: 70px;">
+              <a href="https://automatetheboringstuff.com/" style="font-size: 80%;" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'automate_website_link']);">Book HTML </a>
+            </div>
+          </td>
+        </tr>
+      </tbody></table>
+    </div>
+
+    <!-- Invent Your Own Computer Games with Python blurb -->
+
+    <div>
+      <table border="0">
+        <tbody><tr>
+          <td style="vertical-align: top"><a href="http://inventwithpython.com/chapters/"><img src="inventwithpython.com_files/cover_inventwithpython3_thumb.jpg" class="bookcover" align="right"></a></td>
+
+          <td>
+            <h1>Develop video games!</h1>
+
+            <p><em>Invent Your Own Computer Games with Python</em> 
+teaches you how to program in the Python. Each chapter gives you the 
+complete source code for a new game, and then teaches the programming 
+concepts from the example.</p>
+
+            <p>Invent with Python is for young adults, adult adults, and
+ anyone who has never programmed before. The 3rd edition is streamlined 
+to provide the same content in a smaller book. The 2nd edition is still 
+available <a href="http://inventwithpython.com/2/index.html">on the web</a> and <a href="http://www.amazon.com/gp/product/0982106017?ie=UTF8&amp;tag=playwithpyth-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0982106017">Amazon</a>.</p>
+
+            <!-- Buy and Read Online buttons -->
+            <div style="text-align: center">
+              <a href="http://www.amazon.com/gp/product/1503212300?ie=UTF8&amp;tag=playwithpyth-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1503212300"><img src="inventwithpython.com_files/buyonamazon.png"></a> <a href="http://inventwithpython.com/chapters/"><img src="inventwithpython.com_files/readonline.png"></a>
+            </div><!-- Quick download links -->
+
+            <div style="margin-left: 70px;">
+              <a href="http://inventwithpython.com/inventwithpython_3rd.pdf" style="font-size: 80%;" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'inventwithpython_3rd.pdf']);"><img src="inventwithpython.com_files/greendownload.png"> Book PDF </a> <a href="https://docs.google.com/file/d/0BxJ4y96AC8m3R3NSSW9lcDRBZVk/" style="font-size: 80%;">(Alternate link)</a>
+            </div>
+
+            <div style="margin-left: 70px;">
+              <a href="http://inventwithpython.com/inventwithpython.zip" style="font-size: 80%;"><img src="inventwithpython.com_files/greendownload.png"> PDF and All Source Code</a>
+            </div>
+
+            <div style="margin-left: 70px;">
+              <a href="http://inventwithpython.com/Invent%20Your%20Own%20Computer%20Games%20-%20Al%20Sweigart.mobi" style="font-size: 80%;"><img src="inventwithpython.com_files/greendownload.png"> .mobi (Kindle)</a> (<a href="http://www.amazon.com/gp/product/B00WOY81TC/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00WOY81TC&amp;linkCode=as2&amp;tag=playwithpyth-20&amp;linkId=JEWJJTPZ7L2MIPD2">Or purchase on Amazon for $3</a>)
+            </div>
+
+            <div style="margin-left: 70px;">
+              <a href="http://inventwithpython.com/Invent%20Your%20Own%20Computer%20Games%20-%20Al%20Sweigart.epub" style="font-size: 80%;"><img src="inventwithpython.com_files/greendownload.png"> .epub</a>
+            </div>
+          </td>
+        </tr>
+      </tbody></table>
+    </div>
+
+
+    <!-- Making Games with Python & Pygame blurb -->
+    <div>
+      <table border="0">
+        <tbody><tr>
+          <td style="vertical-align: top"><a href="http://inventwithpython.com/pygame/chapters/"><img src="inventwithpython.com_files/cover_makinggames_thumb.png" class="bookcover" align="right"></a></td>
+
+          <td>
+            <h1>Make games with graphics!</h1>
+
+            <p><em>Making Games with Python &amp; Pygame</em> covers the
+ Pygame library with the source code for 11 games. Making Games was 
+written as a sequel for the same age range as Invent with Python. Once 
+you have an understanding of the basics of Python programming, you can 
+now expand your abilities using the Pygame library to make games with 
+graphics, animation, and sound.</p>
+
+            <p>The book features the source code to 11 games. The games 
+are clones of classics such as Nibbles, Tetris, Simon, Bejeweled, 
+Othello, Connect Four, Flood It, and others.</p>
+
+            <!-- Buy and Read Online buttons -->
+            <div style="text-align: center">
+              <a href="http://www.amazon.com/Making-Games-Python-Pygame-Sweigart/dp/1469901730?ie=UTF8&amp;tag=playwithpyth-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0982106017"><img src="inventwithpython.com_files/buyonamazon_red.png" style=""></a> <a href="http://inventwithpython.com/pygame/chapters/"><img src="inventwithpython.com_files/readonline_red.png"></a>
+            </div>
+
+            <!-- Quick download links-->
+            <div style="margin-left: 70px;">
+              <a href="http://inventwithpython.com/makinggames.pdf" style="font-size: 80%;" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'makinggames.pdf']);"><img src="inventwithpython.com_files/reddownload.png"> Book PDF</a> <a href="https://drive.google.com/file/d/0BxJ4y96AC8m3M2RkN29rRW1rUzg/" style="font-size: 80%;">(Alternate link)</a><br>
+            </div>
+
+            <div style="margin-left: 70px;">
+              <a href="http://inventwithpython.com/makinggames.mobi" style="font-size: 80%;" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'makinggames.mobi']);"><img src="inventwithpython.com_files/reddownload.png"> Book Mobi (for eReaders) </a> <a href="https://drive.google.com/open?id=0BxJ4y96AC8m3NEc1eXE4bVdTZDQ&amp;authuser=0" style="font-size: 80%;">(Alternate link)</a><br>
+            </div>
+
+            <div style="margin-left: 70px;">
+              <a href="http://inventwithpython.com/makinggames.zip" style="font-size: 80%;"><img src="inventwithpython.com_files/reddownload.png"> PDF and All Source Code</a>
+            </div>
+
+            <div style="margin-left: 70px;">
+              <a href="http://inventwithpython.com/Making%20Games%20with%20Python%20&amp;%20Pyga%20-%20Al%20Sweigart.mobi" style="font-size: 80%;"><img src="inventwithpython.com_files/reddownload.png"> .mobi (Kindle)</a> (<a href="http://www.amazon.com/gp/product/B00785HI8M/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00785HI8M&amp;linkCode=as2&amp;tag=playwithpyth-20&amp;linkId=HMAHW6TBENVVXXZ4">Or purchase on Amazon for $3</a>)
+            </div>
+
+            <div style="margin-left: 70px;">
+              <a href="http://inventwithpython.com/Making%20Games%20with%20Python%20&amp;%20Pyga%20-%20Al%20Sweigart.epub" style="font-size: 80%;"><img src="inventwithpython.com_files/reddownload.png"> .epub</a>
+            </div>
+          </td>
+        </tr>
+      </tbody></table>
+    </div>
+
+    <!-- Hacking Secret Ciphers with Python blurb -->
+    <div>
+      <table border="0">
+        <tbody><tr>
+          <td style="vertical-align: top"><a href="http://inventwithpython.com/hacking/chapters/"><img src="inventwithpython.com_files/cover_hackingciphers_thumb.png" class="bookcover" align="right"></a></td>
+
+          <td>
+            <h1>Encrypt messages and hack ciphers!</h1>
+
+            <p><em>Hacking Secret Ciphers with Python</em> teaches complete beginners <strong>how to program</strong> in the <strong>Python programming language</strong>.
+ The book features the source code to several ciphers and hacking 
+programs for these ciphers. The programs include the Caesar cipher, 
+transposition cipher, simple substitution cipher, multiplicative &amp; 
+affine ciphers, Vigenere cipher, and hacking programs for each of these 
+ciphers. The final chapters cover the modern RSA cipher and public key 
+cryptography.</p>
+
+            <p style="font-size: 1.7em; line-height: 1.2em">100% of the proceeds from this book are donated to the <a href="https://www.eff.org/">Electronic Frontier Foundation</a>, the <a href="https://creativecommons.org/">Creative Commons</a>, and the <a href="https://www.torproject.org/">Tor Project</a>.</p>
+
+            <!-- Buy and Read Online buttons -->
+            <div style="text-align: center">
+              <a href="http://www.amazon.com/gp/product/1482614375/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1482614375&amp;linkCode=as2&amp;tag=playwithpyth-20"><img src="inventwithpython.com_files/buyonamazon_blue.png"></a> <a href="http://inventwithpython.com/hacking/chapters/"><img src="inventwithpython.com_files/readonline_blue.png"></a>
+            </div>
+
+            <!-- Quick download links -->
+            <div style="margin-left: 70px;">
+              <a href="http://inventwithpython.com/hackingciphers.pdf" style="font-size: 80%;" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'hackingciphers.pdf']);"><img src="inventwithpython.com_files/bluedownload.png"> Book PDF </a> <a href="https://drive.google.com/file/d/0BxJ4y96AC8m3WWd3Wm1xeXQ1dHM/" style="font-size: 80%;">(Alternate link)</a><br>
+            </div>
+
+            <div style="margin-left: 70px;">
+              <a href="http://inventwithpython.com/hackingciphers.zip" style="font-size: 80%;"><img src="inventwithpython.com_files/bluedownload.png"> PDF and All Source Code</a>
+            </div>
+
+            <div style="margin-left: 70px;">
+              <a href="http://inventwithpython.com/Hacking%20Secret%20Ciphers%20with%20Pyt%20-%20Al%20Sweigart.mobi" style="font-size: 80%;"><img src="inventwithpython.com_files/bluedownload.png"> .mobi (Kindle)</a> (<a href="http://www.amazon.com/gp/product/B00WOY87ZU/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00WOY87ZU&amp;linkCode=as2&amp;tag=playwithpyth-20&amp;linkId=DZKIEFACQEU5VVLG">Or purchase on Amazon for $3</a>)
+            </div>
+
+            <div style="margin-left: 70px;">
+              <a href="http://inventwithpython.com/Hacking%20Secret%20Ciphers%20with%20Pyt%20-%20Al%20Sweigart.epub" style="font-size: 80%;"><img src="inventwithpython.com_files/bluedownload.png"> .epub</a>
+            </div>
+          </td>
+        </tr>
+      </tbody></table>
+    </div>
+
+    <!--
+    <div style="margin-top:35px">
+      <iframe src="gimme.html" width="100%" height="120" frameborder='0'><script language="javascript" type="text/javascript" src="gimme/gimmewidget.php">
+</script></iframe>
+    </div>
+    -->
+
+    <h2>Testimonials</h2>
+
+    <blockquote>
+      “This book is totally appropriate for someone who has never 
+programmed before. Everything is explained, right from the ground up, in
+ a lively, interesting style which doesn't dumb things down.”
+
+      <div style="text-align:right;">
+        - J. Hartley, <a href="http://tartley.com/">tartley.com</a>&nbsp;&nbsp;<br>
+        <a href="http://www.amazon.com/review/RA7EII6XKPG4Y/ref=cm_cr_rdp_perm"><em>Read full Amazon review</em></a>&nbsp;&nbsp;
+      </div>
+    </blockquote>
+
+    <blockquote>
+      “I am a college professor who occasionally teaches courses for 
+liberal arts students. [...] I offered a game programming course in the 
+Python programming language using Sweigart's book. The students loved 
+this book. It starts at the very beginning and leads them, game by 
+fascinating game, to become highly capable programmers.”
+
+      <div style="text-align:right;">
+        - Dr. Robert C. Gann&nbsp;&nbsp;<br>
+        <a href="http://www.amazon.com/review/RA7EII6XKPG4Y/ref=cm_cr_rdp_perm"><em>Read full Amazon review</em></a>&nbsp;&nbsp;
+      </div>
+    </blockquote>
+
+    <blockquote>
+      “I picked up a copy of this book and was in all honesty blown away
+ by how easy the concepts of python are introduced to the reader in a 
+clear and concise manner. The fact that you are also making small little
+ games with your programs throughout this book helps with motivation as 
+tasks get harder and harder - it keeps it all fun while learning. ”
+
+      <div style="text-align:right;">
+        - Tor Hagen&nbsp;&nbsp;<br>
+        <a href="http://www.amazon.com/review/R3I2QMS3W9SCNZ/ref=cm_cr_rdp_perm"><em>Read full Amazon review</em></a>&nbsp;&nbsp;
+      </div>
+    </blockquote>
+
+    <blockquote>
+      “It provides a simple introduction both to programming, and to 
+Python. The book and examples are also available online at the book's 
+website under a Creative Commons Attribution-NonCommercial-ShareAlike 
+license, so you're also supporting free culture business models by 
+buying this book.<br>
+      <br>
+      This book is particularly effective at getting you started, and so
+ if you've tried to learn programming before and failed or gotten 
+stalled, I highly recommend this as the approach for you.”
+
+      <div style="text-align:right;">
+        - Terry Hancock, Free Software Magazine&nbsp;&nbsp;<br>
+        <a href="http://www.freesoftwaremagazine.com/articles/book_review_invent_your_own_computer_games_python_2nd_edition_al_sweigart"><em>Read full review</em></a>&nbsp;&nbsp;
+      </div>
+    </blockquote>
+
+    <blockquote>
+      “This Spring, we used this book for six weeks of a homeschool 
+"Physics and Modeling" class. I am extremely happy with the book. It 
+received many compliments from the students for ease of use, the 
+hands-on approach, and the fact that game programming starts right 
+away.”
+
+      <div style="text-align:right;">
+        - Maria A. Droujkova <a href="http://naturalmath.com/">naturalmath.com</a>&nbsp;&nbsp;<br>
+        <a href="http://www.amazon.com/review/ROPOWJRS4HUNA/ref=cm_cr_rdp_perm"><em>Read full Amazon review</em></a>&nbsp;&nbsp;
+      </div>
+    </blockquote>
+
+    <blockquote>
+      “I used to write a column on a greek magazine about learning 
+Python and PyGame. [...] Since I found this book, every time the topic 
+of learning programming is mentioned - especially from a person 
+interested on making games - I point people to it.”
+
+      <div style="text-align:right;">
+        - Konstantinos Michalopoulos&nbsp;&nbsp;<br>
+        <a href="http://www.amazon.com/review/RYSRCG4GTVNMV/ref=cm_cr_rdp_perm"><em>Read full Amazon review</em></a>&nbsp;&nbsp;
+      </div>
+    </blockquote>
+
+    <blockquote>
+      “My name is Felix. I'm ten years old, and I really liked your book on game programming with python.”
+
+      <div style="text-align:right;">
+        - Felix D. (email to the author)&nbsp;&nbsp;
+      </div>
+    </blockquote>
+
+    <h2>Educational Discount</h2>
+
+    <table border="0">
+      <tbody><tr>
+        <td><img src="inventwithpython.com_files/educationdiscount.png" style="width: 100px"></td>
+
+        <td>
+          <p>If you are an educator, visit the <a href="http://inventwithpython.com/educationdiscount">Education Discount page</a> for a over-50% education discount code.</p>
+        </td>
+      </tr>
+    </tbody></table><!-- TODO add donor match up pages -->
+
+    <h2>Programming Books I Recommend (if you don't mind paying)</h2>
+
+    <p>These books take a more conventional approach to covering 
+programming concepts. They don't focus on having complete source code 
+for small projects or games, but they do explain programming concepts 
+fairly well.</p>
+
+    <table style="font-size: 100%" border="0" cellpadding="2">
+      <tbody><tr>
+        <td class="affiliate_image"><a href="http://www.amazon.com/gp/product/1593274076/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1593274076&amp;linkCode=as2&amp;tag=playwithpyth-20" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'affiliate_program_python_for_kids.link']);"><img src="inventwithpython.com_files/affiliate_program_pythonforkids.jpg" style="border: 1px solid black"></a></td>
+
+        <td class="affiliate_desc"><a href="http://www.amazon.com/gp/product/1593274076/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1593274076&amp;linkCode=as2&amp;tag=playwithpyth-20" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'affiliate_program_python_for_kids.link']);">"Python for Kids"</a> is a new book from <a href="http://nostarch.com/">No Starch Press</a> specifically aimed at a young reader.</td>
+
+        <td class="affiliate_image"><a href="http://www.amazon.com/gp/product/0071807837/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0071807837&amp;linkCode=as2&amp;tag=playwithpyth-20" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'affiliate_program_programming_the_raspberry_pi.link']);"><img src="inventwithpython.com_files/affiliate_program_programmingtheraspberrypi.jpg" style="border: 1px solid black"></a></td>
+
+        <td class="affiliate_desc"><a href="http://www.amazon.com/gp/product/0071807837/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0071807837&amp;linkCode=as2&amp;tag=playwithpyth-20" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'affiliate_program_programming_the_raspberry_pi.link']);">"Programming the Raspberry Pi: Getting Started with Python"</a> is a great book to learn Python if you have purchased a <a href="http://www.raspberrypi.org/">Raspberry Pi</a>.</td>
+      </tr>
+
+      <tr>
+        <td class="affiliate_image"><a href="http://www.amazon.com/gp/product/1593274092/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1593274092&amp;linkCode=as2&amp;tag=playwithpyth-20" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'affiliate_program_super_scratch.link']);"><img src="inventwithpython.com_files/affiliate_program_superscratch.jpg" style="border: 1px solid black"></a></td>
+
+        <td class="affiliate_desc"><a href="http://www.amazon.com/gp/product/1593274092/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1593274092&amp;linkCode=as2&amp;tag=playwithpyth-20" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'affiliate_program_super_scratch.link']);">"Super Scratch Programming Adventure!: Learn to Program By Making Cool Games"</a> is a great book for younger kids (8 to teens) to learn MIT's graphical <a href="http://scratch.mit.edu/">Scratch programming environment</a> to quickly make games.</td>
+
+        <td class="affiliate_image"><a href="http://www.amazon.com/gp/product/1435455002/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=playwithpyth-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1435455002" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'affiliate_program_absolute_beginners.link']);"><img src="inventwithpython.com_files/affiliate_program_absolute_beginners.jpg" style="border: 1px solid black"></a></td>
+
+        <td class="affiliate_desc"><a href="http://www.amazon.com/gp/product/1435455002/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=playwithpyth-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1435455002" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'affiliate_program_absolute_beginners.link']);">"Python Programming for the Absolute Beginner, 3rd Edition"</a> is a great book to learn Python if you have never programmed before.</td>
+      </tr>
+
+      <tr>
+        <td class="affiliate_image"><a href="http://www.amazon.com/gp/product/193518220X/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=playwithpyth-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=193518220X" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'affiliate_program_quick_python.link']);"><img src="inventwithpython.com_files/affiliate_program_quick_python.jpg" style="border: 1px solid black"></a></td>
+
+        <td class="affiliate_desc"><a href="http://www.amazon.com/gp/product/193518220X/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=playwithpyth-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=193518220X" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'affiliate_program_quick_python.link']);">"The Quick Python Book, 2nd Edition"</a>
+ is a great book if you are already a programmer and want to learn 
+Python, or just want to quickly get up to speed with various programming
+ concepts.</td>
+
+        <td class="affiliate_image"><a href="http://www.amazon.com/gp/product/0071497528/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=playwithpyth-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0071497528" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'affiliate_program_evil_genius.link']);"><img src="inventwithpython.com_files/affiliate_program_evil_genius.jpg" style="border: 1px solid black"></a></td>
+
+        <td class="affiliate_desc"><a href="http://www.amazon.com/gp/product/0071497528/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=playwithpyth-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0071497528" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'affiliate_program_evil_genius.link']);">"Programming Video Games for the Evil Genius"</a>
+ teaches the Java programming language, but takes a similar approach to 
+"Invent with Python" by having the source code to various games.</td>
+      </tr>
+
+      <tr>
+        <td class="affiliate_image"><a href="http://www.amazon.com/gp/product/1933988495/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=playwithpyth-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1933988495" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'affiliate_program_hello_world.link']);"><img src="inventwithpython.com_files/affiliate_program_hello_world.jpg" style="border: 1px solid black"></a></td>
+
+        <td class="affiliate_desc"><a href="http://www.amazon.com/gp/product/1933988495/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=playwithpyth-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1933988495" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'affiliate_program_hello_world.link']);">"Hello World! Computer Programming for Kids and Other Beginners"</a> covers the basic concepts like "Absolute Beginner" and "Quick Python" do, but is more purposefully aimed at younger readers.</td>
+
+        <td class="affiliate_image"><a href="http://www.amazon.com/gp/product/1597499579/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1597499579&amp;linkCode=as2&amp;tag=playwithpyth-20" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'affiliate_program_violentpython.link']);"><img src="inventwithpython.com_files/affiliate_program_violentpython.jpg" style="border: 1px solid black"></a></td>
+
+        <td class="affiliate_desc"><a href="http://www.amazon.com/gp/product/1593274076/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1593274076&amp;linkCode=as2&amp;tag=playwithpyth-20" onclick="_gaq.push(['_trackEvent', 'Custom', 'Download', 'affiliate_program_violentpython.link']);">"Violent Python: A Cookbook for Hackers, Forensic Analysts, Penetration Testers and Security Engineers"</a> is devoted to using Python for modern computer security.</td>
+      </tr>
+    </tbody></table>
+
+    <h2>Contact</h2>
+
+    <p>Ask programming questions or send comments to <a href="mailto:al@inventwithpython.com">al@inventwithpython.com</a>.</p>
+
+
+    </div> <!-- /contentarea -->
+  </div> <!-- /mainarea -->
+  <br><br><br><br>
+<script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script>
+</div><iframe style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" allowfullscreen="true" allowtransparency="true" scrolling="no" id="rufous-sandbox" frameborder="0"></iframe></body></html>
