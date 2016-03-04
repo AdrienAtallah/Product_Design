@@ -29,7 +29,8 @@
 
 
 
+****************
 Watch Star Wars: Episode IV in the terminal with the following command:
 "telnet towel.blinkenlights.nl"
-
+****************
 
