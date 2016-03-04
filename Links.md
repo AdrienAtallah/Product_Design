@@ -13,6 +13,7 @@
 [Sublime Text](http://www.sublimetext.com)
 
 
+
 ###Python Resources:
 ######Free online IDE and terminal
 [Coding Ground](http://tutorialspoint.com/codingground.htm)
@@ -25,10 +26,13 @@
 
 
 
+
 ###Course Textbooks:
 [Invent with python](http://inventwithpython.com/index.html)
 
 [Other resources recommended by the author](http://inventwithpython.com/blog/2010/09/01/the-top-10-pygame-tutorials/)
+
+
 
 
 
