@@ -12,10 +12,10 @@
 ######How to Download & Install Sublime Text Editor:
 [Sublime Text](http://www.sublimetext.com)  
 
-
+<BR>
 
 ###Python Resources:
-######Free online IDE and terminal
+######Free online IDE and terminal:
 [Coding Ground](http://tutorialspoint.com/codingground.htm)
 ######Tons of games, tutorials, and much more involving python and pygame:
 [pygame.org](http://www.pygame.org/tags/game)
