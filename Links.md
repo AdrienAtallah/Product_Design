@@ -4,6 +4,7 @@
 ###Product Design GitHub Repository:
 [Course Materials: Product Design](https://github.com/AdrienAtallah/Product_Development)   
 
+<BR>
 
 ###Software Download Links:
 ######How to download & install python and pygame:
@@ -24,7 +25,7 @@
 ######A buch more python code examples:
 [Program Arcade Games With Python and Pygame](http://www.balloonbuilding.com/index.php?chapter=example_code)  
 
-
+<BR>
 
 
 ###Course Textbooks:
@@ -33,7 +34,8 @@
 [Other resources recommended by the author](http://inventwithpython.com/blog/2010/09/01/the-top-10-pygame-tutorials/)  
 
 
-
+<BR>
+<BR>
 
 
 ****************
