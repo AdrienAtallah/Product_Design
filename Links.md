@@ -7,11 +7,16 @@
 <BR>
 
 ###Software Download Links:
+######Download Stencyl:
+[Stencyl Download](http://www.stencyl.com/download/)
 ######How to download & install python and pygame:
 [pygame simplified](http://webprojects.eecs.qmul.ac.uk/fa303/pgs/install.html)
 *NOTE: We want to install python 3.3.1 and pygame 1.9.2 for python 3.3
 ######How to Download & Install Sublime Text Editor:
 [Sublime Text](http://www.sublimetext.com)  
+<BR>
+######Stencyl Crash Course:
+[Stencyl Crash Course](http://www.stencyl.com/help/start/)
 
 <BR>
 
